@@ -1,0 +1,67 @@
+@button-primary-bg: #12595d;
+@button-secondary-bg: #621e83;
+
+.hook-button() {
+	&.button-primary {
+		color: #fff;
+		background-color: @button-primary-bg;
+		border-radius: 3px;
+	}
+
+	&.button-secondary {
+		color: #fff;
+		background-color: @button-secondary-bg;
+		border-radius: 3px;
+	}
+}
+.hook-button-hover() {
+	&.button-primary {
+		background-color: lighten(@button-primary-bg, 10%);
+		color: #fff;
+	}
+
+	&.button-secondary {
+		background-color: lighten(@button-secondary-bg, 10%);
+		color: #fff;
+	}
+
+}
+
+.hook-button-focus() {
+	&.button-primary {
+		background-color: darken(@button-primary-bg, 10%);
+		color: #fff;
+	}
+	
+	&.button-secondary {
+		background-color: darken(@button-secondary-bg, 10%);
+		color: #fff;
+	}
+
+}
+
+.hook-button-active() {
+	&.button-primary {
+		background-color: darken(@button-primary-bg, 10%);
+		color: #fff;
+	}
+
+	&.button-secondary {
+		background-color: darken(@button-secondary-bg, 10%);
+		color: #fff;
+	}
+
+}
+
+.hook-button-disabled() {
+	&.button-primary {
+		background-color: desaturate(lighten(@button-primary-bg, 20%), 70%);
+		color: #fff;
+	}
+
+		&.button-secondary {
+		background-color: desaturate(lighten(@button-secondary-bg, 20%), 70%);
+
+	}
+}
+

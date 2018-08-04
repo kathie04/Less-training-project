@@ -12,6 +12,7 @@ html {
   font-weight: normal;
   line-height: 1.42;
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   background-color: #fff;
   color: #000;
 }
@@ -920,7 +921,7 @@ svg[class*=" icon-"] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 30%;
+  width: 100%;
   padding: 10px;
 }
 .card-image {
